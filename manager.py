@@ -46,13 +46,13 @@ while True:
         with open('vars.txt', 'ab') as g:
             newly_added = []
             while True:
-                a = int(input(f'\n{lg}Enter API ID: {r}'))
-                b = str(input(f'{lg}Enter API Hash: {r}'))
-                c = str(input(f'{lg}Enter Phone Number: {r}'))
+                a = int(input(f'\n{lg}Enter API ID:16250090 {r}'))
+                b = str(input(f'{lg}Enter API Hash: 7f149f1c72f2bf94f277a9aa4d922122 {r}'))
+                c = str(input(f'{lg}Enter Phone Number: 821023590267 {r}'))
                 p = ''.join(c.split())
                 pickle.dump([a, b, p], g)
                 newly_added.append([a, b, p])
-                ab = input(f'\nDo you want to add more accounts?[y/n]: ')
+                ab = input(f'\nDo you want to add more accounts?[y/n]: n ')
                 if 'y' in ab:
                     pass
                 else:
